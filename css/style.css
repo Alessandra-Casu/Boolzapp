@@ -16,7 +16,7 @@ body{
 }
 
 .appContainer{
-    height: 80%;
+    height: 90%;
     width: 80%;
     background-color: whitesmoke;
     display: flex;
@@ -31,7 +31,8 @@ body{
     width: 100%;
     border: 1px solid black;
 }
-.firstRow{
+.firstRow, .lastRow{
+    height: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,15 +43,32 @@ body{
     display: flex;
     align-items: center;
 }
-
 .imgProfile{
     width: 50px;
     height: 50px;
     border-radius: 30px;
 }
-
 .icon a{
     text-decoration: none;
     color:  rgb(180, 169, 169);
+    padding: .5rem;
+}
+
+.main{
+    height: 80%;
+    overflow-y: scroll;
+    background-image: url(../img/mine.jpg);
+}
+
+.messageText{
+    width: 90%;
+    height: 90%;
+    border: 1px solid  rgb(180, 169, 169) ;
+    border-radius: .5rem;
+}
+
+.lastRow a{
+    text-decoration: none;
+    color:  rgb(96, 92, 92);
     padding: .5rem;
 }
