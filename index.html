@@ -38,19 +38,18 @@
                         
                     </div>
             <!-- terza riga di ricerca nella PARTE SINISTRA -->
-                    <div class="thirdRow">
+                    <div class="thirdRow p-2">
                         <i class="fa-solid fa-magnifying-glass icon"></i>
                         <input type="text" placeholder="Cerca o inizia una nuova chat" class="messageText">
                     </div>
             <!-- CHAT -->
             <div class="chat">
-                
-                <ul>
-                    <li class="profile" v-for="(contact, index) in contacts" :key="index">
-                        <img class="imgProfile" :src="contact.avatar" alt="">
-                        {{contact.name}}
-                    </li>
-                </ul>
+                <div class="profile" v-for="(contact, index) in contacts" :key="index">
+                    <img class="imgProfile" :src="contact.avatar" alt="">
+                    {{contact.name}}
+                </div>
+                 
+                 
 
 
             </div>
