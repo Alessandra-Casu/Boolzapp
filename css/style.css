@@ -86,7 +86,9 @@ body{
     border-radius: 50px;
 }
 
-
+.chat{
+    overflow-y: scroll;
+}
 
 
 

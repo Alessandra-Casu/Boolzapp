@@ -43,7 +43,7 @@
                         <input type="text" placeholder="Cerca o inizia una nuova chat" class="messageText">
                     </div>
             <!-- CHAT -->
-            <div class="chat">
+            <div class="chat py-1">
                 <div class="profile" v-for="(contact, index) in contacts" :key="index">
                     <img class="imgProfile" :src="contact.avatar" alt="">
                     {{contact.name}}
