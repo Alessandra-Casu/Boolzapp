@@ -30,7 +30,7 @@
                     <div class="secondRow">
                         <div class="profile">
                             <i class="fa-regular fa-bell-slash bell "></i>
-                            <div class="text ps-2">
+                            <div class="text">
                                 <h6>Ricevi  notifiche di nuovi messaggi </h6>
                                 <a href="#">Attiva notifiche dekstop</a>
                             </div>
@@ -38,10 +38,22 @@
                         
                     </div>
             <!-- terza riga di ricerca nella PARTE SINISTRA -->
-                    <div class="thirdRow p-1 w-100">
+                    <div class="thirdRow">
                         <i class="fa-solid fa-magnifying-glass icon"></i>
                         <input type="text" placeholder="Cerca o inizia una nuova chat" class="messageText">
                     </div>
+            <!-- CHAT -->
+            <div class="chat">
+                
+                <ul>
+                    <li class="profile" v-for="(contact, index) in contacts" :key="index">
+                        <img class="imgProfile" :src="contact.avatar" alt="">
+                        {{contact.name}}
+                    </li>
+                </ul>
+
+
+            </div>
         </div>
         <!-- PARTE DESTRA -->
         <div class="right">
